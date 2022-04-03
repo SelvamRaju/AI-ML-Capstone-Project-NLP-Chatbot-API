@@ -1,0 +1,5 @@
+<div class="container">
+    <img [ngClass]='passMessage.alignment' src='{{ passMessage.image }}' alt="Avatar">
+    <p [ngClass]='passMessage.alignment'>{{passMessage.message }}</p>
+    <span [ngClass]="passMessage.timeAlignment">{{now}}</span>
+</div>

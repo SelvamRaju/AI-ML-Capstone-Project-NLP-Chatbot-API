@@ -1,0 +1,16 @@
+<div class="header">
+    <h1 class="chat-header">Chatbot - Accident Detection</h1>
+</div>
+
+<div class="text-container">
+    <div *ngFor="let message of messages">
+        <app-chat-line-item [passMessage]="message"></app-chat-line-item>
+    </div>
+
+</div>
+
+<div class="footer">
+    <input type="text" class="input-text" #messageText name="message-txt" id="message-txt"
+        placeholder="Enter your message here..">
+    <input type="button" class="footer-button" value="Send" (click)="sendMessage(messageText.value)">
+</div>
